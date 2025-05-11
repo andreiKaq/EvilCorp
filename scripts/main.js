@@ -8,7 +8,19 @@ function init() {
       navbar.classList.toggle('active');
     });
   });
-  
 }
 
 init()
+
+function active_Card () {
+  const cards = document.querySelectorAll('.shop-card')
+
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('active')
+    })
+  });
+
+}
+
+  active_Card()
